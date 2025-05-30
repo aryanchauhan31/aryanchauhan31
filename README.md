@@ -10,7 +10,7 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ## 🛠️ Technical Stack
 
-- **Languages**: Python (PyTorch, NumPy, Scikit-Learn, PySpark, TensorFlow), C/C++, SQL, JavaScript
+- **Languages**: Python (PyTorch, DeepSpeed, NumPy, Scikit-Learn, PySpark, TensorFlow), CUDA C++,C/C++, SQL 
 - **Domains**: LLMs, Vision-Language Models, Quantization, Distributed Training (DDP), Recommender Systems
 - **Tools**: Docker, Slurm, Hugging Face Transformers, LangChain, Ollama, GCP, AWS, Spark, Airflow
 
