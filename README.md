@@ -16,6 +16,28 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ---
 
+## 🧠 Specializations
+
+- **Quantization Techniques**
+  - SmoothQuant, Dynamic Quantization, Quantization-Aware Training (QAT)
+  - Frameworks: PyTorch FX, ONNX Runtime, Hugging Face Optimum
+
+- **Pruning Strategies**
+  - Filter/channel pruning, magnitude pruning, **NetAdapt-style structured pruning**
+  - Latency-aware model slimming via FLOPs/accuracy trade-offs
+
+- **Distributed Training**
+  - PyTorch Distributed Data Parallel (DDP), Deepspeed
+  - Mixed precision (FP16), gradient accumulation, multi-node cluster scaling
+
+- **Multimodal Systems**
+  - CLIP-like ViT-BERT architectures
+  - Vision-Language alignment, CLIPScore evaluation, knowledge distillation
+
+> 🛠️ Comfortable implementing research papers from scratch and profiling performance with tools like Weights & Biases and PyTorch Profiler.
+
+---
+
 ## 🚀 Recent Work
 
 
