@@ -18,8 +18,17 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ## 🚀 Recent Work
 
-### 🤖 `transformers` Contributions
-- **[Enable `device_map="auto"` support for Dinov2](https://github.com/huggingface/transformers/pull/XYZ)** – Added `_no_split_modules` logic for efficient multi-GPU inference.
+
+
+### 🤗 Hugging Face Transformers
+
+- **[#38461: Enable `device_map="auto"` support for Dinov2](https://github.com/huggingface/transformers/pull/38461)**  
+  Enabled automatic device placement for Dinov2 by defining `_no_split_modules`, unlocking inference across CPU/GPU seamlessly.
+
+- **[#38285: Add `GLPNImageProcessorFast`](https://github.com/huggingface/transformers/pull/38285)**  
+  Implemented a fast image processor variant for the GLPN model using TorchVision. Achieved functional parity with the original (max abs diff < 1e-7) and added complete tests.
+
+---
 
 ### 📸 Multimodal VQA Optimization
 - Developed ViT+BERT architecture for Visual Question Answering.
