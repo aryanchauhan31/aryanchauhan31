@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Aryan Chauhan
+# 👋 Hi, I'm Aryan 
 
 I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, passionate about building efficient and scalable AI systems. I focus on **LLM optimization**, **multimodal models**, and **open-source contributions**—most recently to the 🤗 `transformers` library.
 
