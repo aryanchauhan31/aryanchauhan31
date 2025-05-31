@@ -44,10 +44,10 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ### 🤗 Hugging Face Transformers
 
-- **[#38461: Enable `device_map="auto"` support for Dinov2](https://github.com/huggingface/transformers/pull/38461)**  
+- **[#38487: Enable `device_map="auto"` support for Dinov2](https://github.com/huggingface/transformers/pull/38487)**  
   Enabled automatic device placement for Dinov2 by defining `_no_split_modules`, unlocking inference across CPU/GPU seamlessly.
 
-- **[#38285: Add `GLPNImageProcessorFast`](https://github.com/huggingface/transformers/pull/38285)**  
+- **[#38461: Add `GLPNImageProcessorFast`](https://github.com/huggingface/transformers/pull/38461)**  
   Implemented a fast image processor variant for the GLPN model using TorchVision. Achieved functional parity with the original (max abs diff < 1e-7) and added complete tests.
 
 ---
