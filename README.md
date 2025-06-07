@@ -50,6 +50,10 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 - **[#38461: Add `GLPNImageProcessorFast`](https://github.com/huggingface/transformers/pull/38461)**  
   Implemented a fast image processor variant for the GLPN model using TorchVision. Achieved functional parity with the original (max abs diff < 1e-7) and added complete tests.
 
+- **[#38509: SparseVLM – Visual Token Sparsification for Efficient VLM Inference](https://github.com/huggingface/transformers/issues/38509)**  
+  Proposed support for SparseVLM: a **training-free**, plug-and-play method to prune redundant image tokens in VLMs like BLIP and Flamingo.  
+  It uses **attention-guided token selection and recycling** for up to **60% FLOPs reduction** with minimal accuracy loss. Currently preparing an implementation compatible with 🤗 `transformers`.
+
 ---
 
 ### 📸 Multimodal VQA Optimization
