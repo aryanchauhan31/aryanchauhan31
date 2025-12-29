@@ -18,9 +18,10 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ## 🧠 Specializations
 
-- **Quantization Techniques**
-  - SmoothQuant, Dynamic Quantization, Quantization-Aware Training (QAT)
-  - Frameworks: PyTorch FX, ONNX Runtime, Hugging Face Optimum
+- **Inference & Model Optimization**
+  - vLLM & Serving: Chunked Prefix Caching, Paged Attention, Flash Attention, Disaggregated Serving, Tensor Parallelism
+  - Quantization: Activation-aware Weight Quantization, SmoothQuant, Quantization-Aware Training (QAT), Dynamic Quantization, Native bfloat16 Optimization
+  - Techniques: Key-Value (KV) Caching, JIT Compilation, CUDA Kernels
 
 - **Pruning Strategies**
   - Filter/channel pruning, magnitude pruning, **NetAdapt-style structured pruning**
