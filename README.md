@@ -38,7 +38,6 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
   - Vision-Language: CLIP-style ViT+BERT alignment, Cross-modal Knowledge Distillation
   - Architectures: ResNet + DistilBERT student-teacher networks, Transformer-based encoders
 
-> 🛠️ Comfortable implementing research papers from scratch and profiling performance with tools like Weights & Biases and PyTorch Profiler.
 
 ---
 
