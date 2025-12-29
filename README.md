@@ -23,17 +23,20 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
   - Quantization: Activation-aware Weight Quantization, SmoothQuant, Quantization-Aware Training (QAT), Dynamic Quantization, Native bfloat16 Optimization
   - Techniques: Key-Value (KV) Caching, JIT Compilation, CUDA Kernels
 
-- **Pruning Strategies**
-  - Filter/channel pruning, magnitude pruning, **NetAdapt-style structured pruning**
-  - Latency-aware model slimming via FLOPs/accuracy trade-offs
+- **Parameter-Efficient Fine-Tuning (PEFT) & Pruning**
+  - PEFT Methods: LoRA, QLoRA, Soft Prompting (PEFT library)
+  - Pruning Strategies: NetAdapt-style structured pruning, Magnitude pruning, Filter/Channel pruning
+  - Optimization: Latency-aware model compression (e.g., 64% size reduction on DistilBERT) using Hugging Face Optimum
 
-- **Distributed Training**
-  - PyTorch Distributed Data Parallel (DDP), Deepspeed
-  - Mixed precision (FP16), gradient accumulation, multi-node cluster scaling
+- **Distributed Training & MLOps**
+  - Parallelism: Fully Sharded Data Parallel (FSDP), PyTorch DDP, Tensor Parallelism
+  - Memory Efficiency: DeepSpeed (ZeRO-Offload), Gradient Checkpointing, Mixed Precision Training
+  - Infrastructure: Multi-node cluster scaling (Slurm/Kubernetes), Docker containerization
 
-- **Multimodal Systems**
-  - CLIP-like ViT-BERT architectures
-  - Vision-Language alignment, CLIPScore evaluation, knowledge distillation
+- **Multimodal & RAG Architectures**
+  - RAG Systems: LlamaIndex-based pipelines, Vector Search, Knowledge Retrieval, Faithfulness Evaluation
+  - Vision-Language: CLIP-style ViT+BERT alignment, Cross-modal Knowledge Distillation
+  - Architectures: ResNet + DistilBERT student-teacher networks, Transformer-based encoders
 
 > 🛠️ Comfortable implementing research papers from scratch and profiling performance with tools like Weights & Biases and PyTorch Profiler.
 
