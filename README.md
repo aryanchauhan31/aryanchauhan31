@@ -71,8 +71,8 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ## 📈 What I'm Looking For
 I'm currently open to:
-- Remote internships or research collaborations in **LLM efficiency**, **model compression**, or **AI infrastructure**
-- Open-source projects focused on cutting-edge ML research
+- Full-time roles in Machine Learning Engineering or AI Infrastructure, specifically focused on LLM Efficiency, Inference Optimization, and Distributed Training.
+- Opportunities to engineer scalable RAG pipelines and deploy vLLM-based serving architectures in production environments.
 
 ---
 
