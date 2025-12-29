@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Aryan 
 
-I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, passionate about building efficient and scalable AI systems. I focus on **LLM optimization**, **multimodal models**, and **open-source contributions**—most recently to the 🤗 `transformers` library.
+I am a graduate student at NYU pursuing a Master's in Computer Engineering, passionate about building efficient and scalable AI systems. My work focuses on LLM inference optimization (vLLM, quantization), RAG architectures, and multimodal models. An active open-source contributor—most recently to the 🤗 `transformers` library—I am currently seeking full-time Machine Learning Engineering roles to build high-performance AI infrastructure.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aryanchauhan31-blue?logo=linkedin)](https://linkedin.com/in/aryanchauhan31)
 [![GitHub](https://img.shields.io/badge/GitHub-aryanchauhan31-black?logo=github)](https://github.com/aryanchauhan31)
