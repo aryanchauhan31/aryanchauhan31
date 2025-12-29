@@ -10,9 +10,9 @@ I'm a graduate student at **NYU** pursuing a Master's in Computer Engineering, p
 
 ## 🛠️ Technical Stack
 
-- **Languages**: Python (PyTorch, DeepSpeed, NumPy, Scikit-Learn, PySpark, TensorFlow), CUDA C++,C/C++, SQL 
-- **Domains**: LLMs, Vision-Language Models, Quantization, Distributed Training (DDP), Recommender Systems
-- **Tools**: Docker, Slurm, Hugging Face Transformers, LangChain, Ollama, GCP, AWS, Spark, Airflow
+- **Languages**: Python (vLLM, LlamaIndex, PyTorch, DeepSpeed, NumPy, Scikit-Learn, PySpark, TensorFlow), CUDA C++, C/C++, SQL
+- **Domains**: LLMs, RAG, Inference Optimization (Paged Attention, Chunked Prefix), Vision-Language Models, Quantization (bfloat16, QAT), Distributed Training (FSDP, DDP), Recommender Systems
+- **Tools**: Docker, Kubernetes, Slurm, Hugging Face Transformers, LangChain, Ollama, GCP (Vertex AI), AWS, Apache Spark, Airflow, Weights & Biases
 
 ---
 
