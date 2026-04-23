@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Aryan 
 
-I am a graduate student at NYU pursuing a Master's in Computer Engineering, passionate about building efficient and scalable AI systems. My work focuses on LLM inference optimization (vLLM, quantization), RAG architectures, and multimodal models. An active open-source contributor—most recently to the 🤗 `transformers` library—I am currently seeking full-time Machine Learning Engineering roles to build high-performance AI infrastructure.
+I'm an AI Engineer at Charlemagne Labs and a recent MS in Computer Engineering graduate from NYU, passionate about building efficient and scalable AI systems. My work focuses on LLM inference optimization (vLLM, quantization), GPU kernel programming (CUDA C++), RAG architectures, and multimodal models. An active open-source contributor—most recently to the 🤗 transformers library—I am currently seeking full-time Machine Learning Engineering roles to build high-performance AI infrastructure.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aryanchauhan31-blue?logo=linkedin)](https://linkedin.com/in/aryanchauhan31)
 [![GitHub](https://img.shields.io/badge/GitHub-aryanchauhan31-black?logo=github)](https://github.com/aryanchauhan31)
@@ -8,15 +8,15 @@ I am a graduate student at NYU pursuing a Master's in Computer Engineering, pass
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
-- **Languages**: Python (vLLM, LlamaIndex, PyTorch, DeepSpeed, NumPy, Scikit-Learn, PySpark, TensorFlow), CUDA C++, C/C++, SQL
-- **Domains**: LLMs, RAG, Inference Optimization (Paged Attention, Chunked Prefix), Vision-Language Models, Quantization (bfloat16, QAT), Distributed Training (FSDP, DDP), Recommender Systems
-- **Tools**: Docker, Kubernetes, Slurm, Hugging Face Transformers, LangChain, Ollama, GCP (Vertex AI), AWS, Apache Spark, Airflow, Weights & Biases
+Languages: Python (vLLM, LlamaIndex, PyTorch, DeepSpeed, NumPy, Scikit-Learn, PySpark, TensorFlow), CUDA C++, SQL
+Domains: LLMs, RAG, Inference Optimization (Paged Attention, Chunked Prefix), Vision-Language Models, Quantization (bfloat16, AWQ, QAT), Distributed Training (FSDP, DDP), Phishing Detection & Security AI
+Tools: Docker, Kubernetes, Slurm, Hugging Face Transformers, LangChain, Ollama, GCP (Vertex AI, BigQuery), AWS, Apache (Spark, Airflow, Beam), Weights & Biases, CI/CD Pipelines
 
 ---
 
-## 🧠 Specializations
+## Specializations
 
 - **Inference & Model Optimization**
   - vLLM & Serving: Chunked Prefix Caching, Paged Attention, Flash Attention, Disaggregated Serving, Tensor Parallelism
@@ -38,12 +38,28 @@ I am a graduate student at NYU pursuing a Master's in Computer Engineering, pass
   - Vision-Language: CLIP-style ViT+BERT alignment, Cross-modal Knowledge Distillation
   - Architectures: ResNet + DistilBERT student-teacher networks, Transformer-based encoders
 
-
 ---
 
-## 🚀 Recent Work
+##  Current Work
+AI Engineer — Charlemagne Labs (Jan 2026 – Present)
+Building real-time phishing URL classification systems using small language models:
 
+Fine-tuning a Gemma 3-based 270M-parameter SLM, improving precision/recall from 49%/90% to 96%/94% across 30+ model iterations
+Architected a teacher–student evaluation framework using a 9B-parameter LLM to identify and fix SLM weaknesses
+Engineered a multi-stage synthetic data pipeline producing 36K balanced training samples for robustness against unseen threats
+Deployed continuous evaluation on AWS against OpenPhish and Tranco ground-truth datasets
 
+---
+## Featured Projects
+### CUDA Kernel Library
+A collection of GPU-accelerated kernels written in CUDA C++ for core ML and numerical operations:
+
+Matrix Multiplication — tiled shared-memory matmul and sparse matmul (CSR format)
+Parallel Reductions — 4 progressive optimization stages (naive → warp-level)
+Prefix Sum — Blelloch-style inclusive/exclusive scan
+Dot Product & Vector Add — fundamental CUDA parallelism patterns
+CUDA Streams — overlapping computation with memory transfers
+Categorical Cross-Entropy — custom loss kernel for training pipelines
 
 ### 🤗 Hugging Face Transformers
 
@@ -57,22 +73,22 @@ I am a graduate student at NYU pursuing a Master's in Computer Engineering, pass
   Proposed support for SparseVLM: a **training-free**, plug-and-play method to prune redundant image tokens in VLMs like BLIP and Flamingo.  
   It uses **attention-guided token selection and recycling** for up to **60% FLOPs reduction** with minimal accuracy loss. Currently preparing an implementation compatible with 🤗 `transformers`.
 
----
 
-### 📸 Multimodal VQA Optimization
-- Developed ViT+BERT architecture for Visual Question Answering.
-- Trained with QAT + DDP over 4×L4 GPUs for 1.8× speed-up and 60% model compression.
+### End-to-End RAG System for Document Q&A
 
-### 🧠 DistilBERT Compression Pipeline
-- Reduced size by 64% with dynamic quantization.
-- Automated finetuning and benchmarking via Hugging Face tools.
+LlamaIndex + Hugging Face pipeline achieving 94% faithfulness and 89% answer relevancy
+vLLM integration with Chunked Prefix Caching for 3× decoding throughput improvement
+Native bfloat16 on A100 GPUs to eliminate quantization precision loss
 
----
+## Multimodal VQA Optimization
 
-## 📈 What I'm Looking For
-I'm currently open to:
-- Full-time roles in Machine Learning Engineering or AI Infrastructure, specifically focused on LLM Efficiency, Inference Optimization, and Distributed Training.
-- Opportunities to engineer scalable RAG pipelines and deploy vLLM-based serving architectures in production environments.
+ViT+BERT cross-modal architecture with ResNet18+DistilBERT student model (60% compression)
+QAT + DDP training across 4×L4 GPUs — 1.8× speed-up, final loss of 0.098
+
+## DistilBERT Compression Pipeline
+
+64% model size reduction (268MB → 96MB) preserving 98.9% GLUE accuracy
+Automated fine-tuning and dynamic quantization via Hugging Face Optimum
 
 ---
 
