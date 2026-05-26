@@ -51,6 +51,14 @@ Deployed continuous evaluation on AWS against OpenPhish and Tranco ground-truth 
 
 ---
 ## Featured Projects
+
+### Mixtral 8x7B — vLLM Inference on Vast.ai
+Production vLLM deployment of Mixtral 8x7B Instruct (bfloat16) across 4× A100 SXM4 80GB GPUs with full NVLink mesh:
+Tensor parallelism (TP=4) over NV12 NVLink — 600 GB/s bidirectional, confirmed via nvidia-smi topo
+Benchmarked 728 tok/s at concurrency 16 with 95–96% SM utilization uniformly across all GPUs
+Expert load analysis via MoE router hooks — 1.28× imbalance ratio, experts 0–1 absorbing 30.5% of tokens
+Automated provisioning pipeline: Vast.ai API → SSH → Ray cluster init → vLLM launch
+
 ### CUDA Kernel Library
 A collection of GPU-accelerated kernels written in CUDA C++ for core ML and numerical operations:
 
@@ -60,6 +68,14 @@ Prefix Sum — Blelloch-style inclusive/exclusive scan
 Dot Product & Vector Add — fundamental CUDA parallelism patterns
 CUDA Streams — overlapping computation with memory transfers
 Categorical Cross-Entropy — custom loss kernel for training pipelines
+
+### Agentic RAG for Financial 10-K Analysis
+A local agentic RAG system for multi-step Q&A over SEC filings and structured financials for Apple, Microsoft, and Alphabet (FY2023–2025):
+ReAct agent with parallel tool calls — dynamically routes between SQL and PDF retrieval per query
+Hybrid dense + sparse retrieval (FAISS + BGE embeddings, BM25) fused with RRF, reranked via CrossEncoder
+SQLite backend covering income statements, balance sheets, segment & geographic revenue across 3 companies
+Multi-tier evaluation pipeline — fuzzy numeric scoring, entity matching, and LLM-based judging
+
 
 ### 🤗 Hugging Face Transformers
 
@@ -72,24 +88,6 @@ Categorical Cross-Entropy — custom loss kernel for training pipelines
 - **[#38509: SparseVLM – Visual Token Sparsification for Efficient VLM Inference](https://github.com/huggingface/transformers/issues/38509)**  
   Proposed support for SparseVLM: a **training-free**, plug-and-play method to prune redundant image tokens in VLMs like BLIP and Flamingo.  
   It uses **attention-guided token selection and recycling** for up to **60% FLOPs reduction** with minimal accuracy loss. Currently preparing an implementation compatible with 🤗 `transformers`.
-
-
-### End-to-End RAG System for Document Q&A
-
-LlamaIndex + Hugging Face pipeline achieving 94% faithfulness and 89% answer relevancy
-vLLM integration with Chunked Prefix Caching for 3× decoding throughput improvement
-Native bfloat16 on A100 GPUs to eliminate quantization precision loss
-
-## Multimodal VQA Optimization
-
-ViT+BERT cross-modal architecture with ResNet18+DistilBERT student model (60% compression)
-QAT + DDP training across 4×L4 GPUs — 1.8× speed-up, final loss of 0.098
-
-## DistilBERT Compression Pipeline
-
-64% model size reduction (268MB → 96MB) preserving 98.9% GLUE accuracy
-Automated fine-tuning and dynamic quantization via Hugging Face Optimum
-
 ---
 
 ## 📫 Contact
